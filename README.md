@@ -1,124 +1,127 @@
-# ⚽ Football Player Tracking & Match Analysis using YOLOv5
+# ⚽ AI Football Player Tracking & Match Analysis
 
-An AI-powered computer vision project that detects, tracks, and analyzes football players, referees, and the ball from match videos using **YOLOv5**, **OpenCV**, and **Python**.
+<div align="center">
 
-The project also estimates player speed, traveled distance, team ball possession, and camera movement, providing advanced match analytics through computer vision techniques.
+# AI-Powered Football Analytics using Computer Vision
+
+**Bachelor's Final Year Project (2024–2025)**
+
+Faculty of Sciences – Mohammed V University in Rabat
+
+Bachelor's Degree in Physics  
+**Electronics, Computer Science & Automation**
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![YOLOv5](https://img.shields.io/badge/YOLOv5-Computer%20Vision-red)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green?logo=opencv)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange)
+![GitHub](https://img.shields.io/github/stars/bilaldib/football-player-analysis)
+
+</div>
 
 ---
 
-## 📌 Overview
+# 📖 Project Overview
 
-This project combines multiple computer vision algorithms to automatically analyze football matches.
+This project was developed as my **Bachelor's Final Year Project (2024–2025)** for the Bachelor's Degree in **Physics – Electronics, Computer Science & Automation** at the **Faculty of Sciences, Mohammed V University in Rabat**.
 
-It performs:
+The objective was to design and implement an intelligent football match analysis system using **Computer Vision**, **Deep Learning**, and **Artificial Intelligence**.
 
-- 🎯 Real-time player, referee, and ball detection
-- 📍 Multi-object tracking across video frames
-- 👕 Team classification based on jersey colors
-- ⚽ Ball possession estimation
-- 🚶 Player speed calculation
-- 📏 Distance traveled by each player
+The application automatically detects and tracks football players, referees, and the ball while generating advanced match analytics such as:
+
+- Player tracking
+- Ball tracking
+- Team identification
+- Ball possession estimation
+- Camera motion compensation
+- Perspective transformation
+- Speed estimation
+- Distance covered by each player
+
+This project combines modern AI techniques with practical sports analytics to demonstrate real-world applications of deep learning and computer vision.
+
+---
+
+# 🎯 Main Features
+
+- ⚽ Football player detection
+- 🥅 Ball detection
+- 👨‍⚖️ Referee detection
+- 🎯 Multi-object tracking
+- 👕 Team classification using K-Means clustering
+- 📊 Ball possession estimation
 - 🎥 Camera motion estimation
-- 🌍 Perspective transformation for real-world measurements
+- 🌍 Perspective transformation
+- 🚀 Player speed estimation
+- 📏 Distance calculation
+- 📈 Football match analytics
 
 ---
 
-## ✨ Features
+# 🛠️ Technologies
 
-- Object Detection using **YOLOv5**
-- Multi-object Tracking
-- Team Assignment using **K-Means Clustering**
-- Camera Motion Estimation using Optical Flow
-- Perspective Transformation
-- Ball Possession Statistics
-- Speed Estimation
-- Distance Measurement
-- Match Analytics Visualization
-
----
-
-## 🛠 Technologies
-
-- Python
-- YOLOv5
-- OpenCV
-- NumPy
-- Pandas
-- Scikit-learn
-- Matplotlib
-- Ultralytics
-- Supervision
+| Category | Technologies |
+|----------|--------------|
+| Programming | Python |
+| AI Model | YOLOv5 |
+| Computer Vision | OpenCV |
+| Machine Learning | Scikit-Learn |
+| Data Processing | NumPy, Pandas |
+| Visualization | Matplotlib |
+| Version Control | Git & GitHub |
 
 ---
 
-## 📂 Project Structure
+# 🏗️ System Architecture
 
 ```text
-football-player-analysis/
-│
-├── camera_movement_estimator/
-├── development_and_analysis/
-├── models/
-├── player_ball_assigner/
-├── speed_and_distance_estimator/
-├── team_assigner/
-├── trackers/
-├── training/
-├── utils/
-├── view_transformer/
-├── yolov5/
-│
-├── main.py
-├── yolo_inference.py
-├── README.md
-└── requirements.txt
+Football Video
+      │
+      ▼
+YOLOv5 Object Detection
+      │
+      ▼
+Multi-Object Tracking
+      │
+      ▼
+Team Classification
+      │
+      ▼
+Camera Motion Estimation
+      │
+      ▼
+Perspective Transformation
+      │
+      ▼
+Speed & Distance Estimation
+      │
+      ▼
+Match Analytics Dashboard
 ```
 
 ---
 
-## 🚀 Installation
-
-Clone the repository
+# 🚀 Installation
 
 ```bash
 git clone https://github.com/bilaldib/football-player-analysis.git
-```
 
-Move into the project directory
-
-```bash
 cd football-player-analysis
-```
 
-Create a virtual environment
-
-```bash
 python -m venv .venv
-```
 
-Activate it
-
-Windows
-
-```bash
+# Windows
 .venv\Scripts\activate
-```
 
-Linux / macOS
-
-```bash
+# Linux / macOS
 source .venv/bin/activate
-```
 
-Install dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## ▶️ Run
+# ▶️ Run
 
 ```bash
 python main.py
@@ -126,96 +129,77 @@ python main.py
 
 ---
 
-## 📸 Results
-
-### Detection
-
-- Football Players
-- Referees
-- Ball
-
-### Tracking
-
-- Persistent player IDs
-- Ball tracking
-
-### Analytics
-
-- Speed estimation
-- Distance traveled
-- Team assignment
-- Ball possession
-- Camera motion compensation
-
----
-
-## 📊 Example Output
-
-> Add screenshots or GIFs inside the **assets/** folder.
-
-Example:
-
-```markdown
-![Detection](assets/detection.png)
-
-![Tracking](assets/tracking.gif)
-
-![Analytics](assets/analytics.png)
-```
-
----
-
-## 📈 Future Improvements
-
-- DeepSORT / ByteTrack integration
-- Real-time webcam inference
-- Player action recognition
-- Automatic event detection
-- Pass network analysis
-- Expected Goals (xG)
-- Tactical heatmaps
-- Web dashboard using Streamlit
-
----
-
-## 📄 Model
-
-The trained weights (`best.pt`) are **not included** in this repository due to GitHub file size limitations.
-
-Place your trained model inside:
+# 📂 Repository Structure
 
 ```text
-models/
+football-player-analysis
+│
+├── camera_movement_estimator
+├── player_ball_assigner
+├── speed_and_distance_estimator
+├── team_assigner
+├── trackers
+├── utils
+├── view_transformer
+├── yolov5
+├── main.py
+└── yolo_inference.py
 ```
 
-before running the project.
+---
+
+# 📸 Results
+
+The application is capable of:
+
+- Detecting players, referees and the ball
+- Tracking every object throughout the match
+- Assigning players to their respective teams
+- Estimating player speed
+- Measuring distance covered
+- Computing ball possession statistics
+
+> Screenshots and demo GIFs will be added in the `assets/` directory.
 
 ---
 
-## 🤝 Contributing
+# 📄 Trained Model
 
-Contributions are welcome.
+The trained model (`best.pt`) is not included in this repository because of GitHub file size limitations.
 
-Feel free to fork this repository and submit a pull request.
+Download the model and place it inside the `models/` directory before running the application.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍🏫 Academic Supervision
 
-**Bilal Dib**
+**Supervisor**
+
+**Dr. Hassan Roukhe**
+
+Faculty of Sciences – Mohammed V University in Rabat
+
+**Co-Supervisor**
+
+**Dr. Khalid ELAMRAOUI**
+
+Faculty of Sciences – Mohammed V University in Rabat
+
+---
+
+# 👨‍💻 Author
+
+## Bilal Dib
 
 Master's Student in Computer Science & Telecommunications
 
-Faculty of Sciences – Mohammed V University (Rabat)
+Faculty of Sciences – Mohammed V University in Rabat
 
-GitHub:
-https://github.com/bilaldib
-
-LinkedIn:
-(Add your LinkedIn profile)
+- **GitHub:** https://github.com/bilaldib
+- **LinkedIn:** https://www.linkedin.com/in/bilal-dib-354796376/
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
-If you find this project useful, consider giving it a ⭐ on GitHub.
+If you find this repository useful, please consider giving it a ⭐.
