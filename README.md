@@ -175,7 +175,7 @@ Download the model and place it inside the `models/` directory before running th
 
 **Supervisor**
 
-**Dr. Hassan Roukhe**
+**Pr. Hassan Roukhe**
 
 Faculty of Sciences – Mohammed V University in Rabat
 
