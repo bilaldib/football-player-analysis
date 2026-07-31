@@ -1,0 +1,52 @@
+*__pycahce__*
+*.pyc
+# Virtual environments
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Videos
+input_videos/
+output_videos/
+
+# YOLO models
+*.pt
+
+# Training results
+runs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+*.whl
+# Virtual environments
+.venv/
+venv/
+
+# Videos
+input_videos/
+output_videos/
+
+# Training
+training/
+runs/
+
+# Models
+models/
+*.pt
+*.pth
+*.onnx
+
+# Python packages
+*.whl
+
+# Python cache
+__pycache__/
+*.pyc
