@@ -1,4 +1,4 @@
-# ⚽ AI Football Player Tracking & Match Analysis
+<img width="1600" height="903" alt="image" src="https://github.com/user-attachments/assets/70144e03-e19a-4c61-ad58-14841a498dce" /># ⚽ AI Football Player Tracking & Match Analysis
 
 <div align="center">
 
@@ -159,7 +159,7 @@ The application is capable of:
 - Measuring distance covered
 - Computing ball possession statistics
 
-> Screenshots and demo GIFs will be added in the `assets/` directory.
+
 
 ---
 
